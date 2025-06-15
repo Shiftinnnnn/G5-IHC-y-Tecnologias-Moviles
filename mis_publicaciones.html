@@ -4,7 +4,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Mis Publicaciones</title>
+    <title>Mis Publicaciones</title>
     <link rel="stylesheet" href="css/mis_publicaciones.css">
 </head>
 <body>
@@ -21,13 +21,15 @@
             <a href="#"><i></i>Cerrar Sesión</a>
         </div>
     </nav>
-        <main class="Publicaciones">
+    <main class="Publicaciones">
         <h1>Mis Publicaciones</h1>
     </main>
     <nav class="Boton_Publi">
         <li><a href="#">Nueva Publicación</a></li>
     </nav>
-    <section class="Publica">
+    
+    <!-- Publicación 1 - Cartuchera -->
+    <section class="Publica" data-id="1">
         <article>
             <div>
                 <img src="img/mis_publicaciones/SU-CARTLI-sub-550x550.jpg" class="Cartu" width="20%">
@@ -47,10 +49,12 @@
         </article>
         <p><span class="Ubicacion">En Objetos Perdidos</span></p>
         <nav class="Detalles_Publicacion">
-                <a href="#"><i></i>Ver más</a>
+            <a href="#" onclick="verDetalle(1)"><i></i>Ver más</a>
         </nav>
     </section>
-    <section class="Post_2">
+    
+    <!-- Publicación 2 - Celular -->
+    <section class="Post_2" data-id="2">
         <article>
             <div>
                 <img src="img/mis_publicaciones/celular.jpg" class="Cartu" width="20%">
@@ -70,10 +74,12 @@
         </article>
         <p><span class="Ubicacion">En mi posesión</span></p>
         <nav class="Detalles_Publicacion">
-                <a href="#"><i></i>Ver más</a>
+            <a href="#" onclick="verDetalle(2)"><i></i>Ver más</a>
         </nav>
     </section>
-    <section class="Post_3">
+    
+    <!-- Publicación 3 - Bolso -->
+    <section class="Post_3" data-id="3">
         <article>
             <div>
                 <img src="img/mis_publicaciones/bolso.jpg" class="Cartu" width="20%">
@@ -93,10 +99,12 @@
         </article>
         <p><span class="Ubicacion">En mi posesión</span></p>
         <nav class="Detalles_Publicacion">
-                <a href="#"><i></i>Ver más</a>
+            <a href="#" onclick="verDetalle(3)"><i></i>Ver más</a>
         </nav>
     </section>
-    <section class="Post_4">
+    
+    <!-- Publicación 4 - Mochila -->
+    <section class="Post_4" data-id="4">
         <article>
             <div>
                 <img src="img/mis_publicaciones/mochila.jpg" class="Cartu" width="20%">
@@ -116,7 +124,7 @@
         </article>
         <p><span class="Ubicacion">Entregado</span></p>
         <nav class="Detalles_Publicacion">
-                <a href="#"><i></i>Ver más</a>
+            <a href="#" onclick="verDetalle(4)"><i></i>Ver más</a>
         </nav>
     </section>
 </body>
