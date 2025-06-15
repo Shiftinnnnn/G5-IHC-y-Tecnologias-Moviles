@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Publicaciones</title>
+    <link rel="stylesheet" href="css/mis_publicaciones.css">
+</head>
+<body>
+    <nav class="barra_lateral">
+        <img src="img/mis_publicaciones/logo.JPG" class="Logo" width="92%">
+        <div class="menu">
+            <a href="mis_publicaciones.html" id="btn_mis_publi"><i></i>Mis Publicaciones</a>
+            <a href="publicaciones.html"><i></i>Publicaciones</a>
+            <a href="#"><i></i>Otros</a>
+            <a href="#"><i></i>Mi Perfil</a>
+            <a href="#"><i></i>Notificaciones</a>
+        </div>
+        <div class="Cerrar">
+            <a href="#"><i></i>Cerrar Sesión</a>
+        </div>
+    </nav>
+    <main class="Publicaciones">
+        <h1>Mis Publicaciones</h1>
+    </main>
+    <nav class="Boton_Publi">
+        <li><a href="#">Nueva Publicación</a></li>
+    </nav>
+    
+    <!-- Publicación 1 - Cartuchera -->
+    <section class="Publica" data-id="1">
+        <article>
+            <div>
+                <img src="img/mis_publicaciones/SU-CARTLI-sub-550x550.jpg" class="Cartu" width="20%">
+            </div>
+            <p>
+                <span class="Caracteristica"> Objeto:</span>
+                <span class="Descripcion">Cartuchera</span> <br>
+                <span class="Caracteristica"> Sede:</span>
+                <span class="Descripcion">San Miguel</span> <br>
+                <span class="Caracteristica"> Area:</span>
+                <span class="Descripcion">Salon B405</span> <br>
+                <span class="Caracteristica"> Dia Encontrado:</span>
+                <span class="Descripcion">13/04/2025</span> <br>
+                <span class="Caracteristica"> De:</span>
+                <span class="Descripcion">Oliver Martinez</span><br>
+            </p>
+        </article>
+        <p><span class="Ubicacion">En Objetos Perdidos</span></p>
+        <nav class="Detalles_Publicacion">
+            <a href="detalle_mis_publicaciones.html" onclick="verDetalle(1)"><i></i>Ver más</a>
+        </nav>
+    </section>
+    
+    <!-- Publicación 2 - Celular -->
+    <section class="Post_2" data-id="2">
+        <article>
+            <div>
+                <img src="img/mis_publicaciones/celular.jpg" class="Cartu" width="20%">
+            </div>
+            <p>
+                <span class="Caracteristica"> Objeto:</span>
+                <span class="Descripcion">Celular</span> <br>
+                <span class="Caracteristica"> Sede:</span>
+                <span class="Descripcion">San Miguel</span> <br>
+                <span class="Caracteristica"> Area:</span>
+                <span class="Descripcion">Salon B405</span> <br>
+                <span class="Caracteristica"> Dia Encontrado:</span>
+                <span class="Descripcion">13/04/2025</span> <br>
+                <span class="Caracteristica"> De:</span>
+                <span class="Descripcion">Oliver Martinez</span><br>
+            </p>
+        </article>
+        <p><span class="Ubicacion">En mi posesión</span></p>
+        <nav class="Detalles_Publicacion">
+            <a href="detalle_mis_publicaciones.html" onclick="verDetalle(2)"><i></i>Ver más</a>
+        </nav>
+    </section>
+    
+    <!-- Publicación 3 - Bolso -->
+    <section class="Post_3" data-id="3">
+        <article>
+            <div>
+                <img src="img/mis_publicaciones/bolso.jpg" class="Cartu" width="20%">
+            </div>
+            <p>
+                <span class="Caracteristica"> Objeto:</span>
+                <span class="Descripcion">Bolso</span> <br>
+                <span class="Caracteristica"> Sede:</span>
+                <span class="Descripcion">San Isidro</span> <br>
+                <span class="Caracteristica"> Area:</span>
+                <span class="Descripcion">Salon B303</span> <br>
+                <span class="Caracteristica"> Dia Encontrado:</span>
+                <span class="Descripcion">12/05/2025</span> <br>
+                <span class="Caracteristica"> De:</span>
+                <span class="Descripcion">Oliver Martinez</span><br>
+            </p>
+        </article>
+        <p><span class="Ubicacion">En mi posesión</span></p>
+        <nav class="Detalles_Publicacion">
+            <a href="detalle_mis_publicaciones.html" onclick="verDetalle(3)"><i></i>Ver más</a>
+        </nav>
+    </section>
+    
+    <!-- Publicación 4 - Mochila -->
+    <section class="Post_4" data-id="4">
+        <article>
+            <div>
+                <img src="img/mis_publicaciones/mochila.jpg" class="Cartu" width="20%">
+            </div>
+            <p>
+                <span class="Caracteristica"> Objeto:</span>
+                <span class="Descripcion">Mochila</span> <br>
+                <span class="Caracteristica"> Sede:</span>
+                <span class="Descripcion">San Miguel</span> <br>
+                <span class="Caracteristica"> Area:</span>
+                <span class="Descripcion">Salon B705</span> <br>
+                <span class="Caracteristica"> Dia Encontrado:</span>
+                <span class="Descripcion">14/04/2025</span> <br>
+                <span class="Caracteristica"> De:</span>
+                <span class="Descripcion">Oliver Martinez</span><br>
+            </p>
+        </article>
+        <p><span class="Ubicacion">Entregado</span></p>
+        <nav class="Detalles_Publicacion">
+            <a href="detalle_mis_publicaciones.html" onclick="verDetalle(4)"><i></i>Ver más</a>
+        </nav>
+    </section>
+</body>
+<script src="js/mis_publicaciones.js"></script>
+</html>

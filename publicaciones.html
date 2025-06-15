@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Publicaciones</title>
+    <link rel="stylesheet" href="css/publicaciones.css">
+</head>
+<body>
+    <nav class="barra_lateral">
+        <img src="img/publicaciones/logo.JPG" class="Logo" width="92%">
+        <div class="menu">
+            <a href="mis_publicaciones.html"><i></i>Mis Publicaciones</a>
+            <a href="Publicaciones.html" id="btn_publi"><i></i>Publicaciones</a>
+            <a href="#"><i></i>Otros</a>
+            <a href="#"><i></i>Mi Perfil</a>
+            <a href="#"><i></i>Notificaciones</a>
+        </div>
+        <div class="Cerrar">
+            <a href="#"><i></i>Cerrar Sesión</a>
+        </div>
+    </nav>
+    <main class="Publicaciones">
+        <h1>Publicaciones</h1>
+    </main>
+    <div class="busqueda">
+        <button class="Filtro" onclick="toggleFiltro()">≡</button>
+        <input type="text" id="barraBusqueda" placeholder="Buscar...">
+        <button type="submit">🔍︎</button>
+    </div>
+    <div id="menuFiltros" class="menu-filtros">
+            <p class="fila-filtro">· Sede <input type="text"></p>
+            <p class="fila-filtro">· Área <input type="text"></p>
+            <p class="fila-filtro">· Día encontrado <input type="a"></p>
+            <p class="fila-filtro">· Favorito </p>
+            <button class="Circulo" onclick="toggleEstrella(this)"></button>
+    </div>
+    <div class="post Post_1"
+            data-objeto="cartuchera" 
+            data-sede="san Isidro" 
+            data-area="salon B311" 
+            data-dia="10/05/2025">
+        <article>
+            <div>
+                <img src="img/publicaciones/cartu.jpg" class="Cartu" width="20%">
+            </div>
+            <p>
+                <span class="Caracteristica"> Objeto:</span>
+                <span class="Descripcion">Cartuchera</span> <br>
+                <span class="Caracteristica"> Sede:</span>
+                <span class="Descripcion">San Isidro</span> <br>
+                <span class="Caracteristica"> Area:</span>
+                <span class="Descripcion">Salon B311</span> <br>
+                <span class="Caracteristica"> Dia Encontrado:</span>
+                <span class="Descripcion">10/05/2025</span> <br>
+                <span class="Caracteristica"> De:</span>
+                <span class="Descripcion">Jose Galvez</span><br>
+            </p>
+        </article>
+        <p><span class="Ubicacion">En Objetos Perdidos</span></p>
+        <button class="estrella" onclick="toggleEstrella(this)">★</button>
+        <nav class="Detalles_Publicacion">
+                <a href="#"><i></i>Ver más</a>
+        </nav>
+    </div>
+    <div class="post Post_2"
+        data-objeto="celular" 
+        data-sede="san Miguel" 
+        data-area="salon C708" 
+        data-dia="09/10/2025">
+        <article>
+            <div>
+                <img src="img/publicaciones/celular_p.jpg" class="Cartu" width="20%">
+            </div>
+            <p>
+                <span class="Caracteristica"> Objeto:</span>
+                <span class="Descripcion">Celular</span> <br>
+                <span class="Caracteristica"> Sede:</span>
+                <span class="Descripcion">San Miguel</span> <br>
+                <span class="Caracteristica"> Area:</span>
+                <span class="Descripcion">Salon B708</span> <br>
+                <span class="Caracteristica"> Dia Encontrado:</span>
+                <span class="Descripcion">09/10/2025</span> <br>
+                <span class="Caracteristica"> De:</span>
+                <span class="Descripcion">Antonio Hernandez</span><br>
+            </p>
+        </article>
+        <p><span class="Ubicacion">En Objetos Perdidos</span></p>
+        <button class="estrella" onclick="toggleEstrella(this)">★</button>
+        <nav class="Detalles_Publicacion">
+                <a href="#"><i></i>Ver más</a>
+        </nav>
+    </div>
+    <div class="post Post_3"
+        data-objeto="bolso" 
+        data-sede="monterico" 
+        data-area="salon B201" 
+        data-dia="21/08/2025">
+        <article>
+            <div>
+                <img src="img/publicaciones/bolso_p.jpg" class="Cartu" width="20%">
+            </div>
+            <p>
+                <span class="Caracteristica"> Objeto:</span>
+                <span class="Descripcion">Bolso</span> <br>
+                <span class="Caracteristica"> Sede:</span>
+                <span class="Descripcion">Monterico</span> <br>
+                <span class="Caracteristica"> Area:</span>
+                <span class="Descripcion">Salon B201</span> <br>
+                <span class="Caracteristica"> Dia Encontrado:</span>
+                <span class="Descripcion">21/08/2025</span> <br>
+                <span class="Caracteristica"> De:</span>
+                <span class="Descripcion">Juana Margarita</span><br>
+            </p>
+        </article>
+        <p><span class="Ubicacion">En mi posesión</span></p>
+        <button class="estrella" onclick="toggleEstrella(this)">★</button>
+        <nav class="Detalles_Publicacion">
+                <a href="#"><i></i>Ver más</a>
+        </nav>
+    </div>
+    <div class="post Post_4"
+        data-objeto="Mochila" 
+        data-sede="San Miguel" 
+        data-area="Salon B705" 
+        data-dia="14/04/2025">
+        <article>
+            <div>
+                <img src="img/publicaciones/mochila_p.jpg" class="Cartu" width="20%">
+            </div>
+            <p>
+                <span class="Caracteristica"> Objeto:</span>
+                <span class="Descripcion">Mochila</span> <br>
+                <span class="Caracteristica"> Sede:</span>
+                <span class="Descripcion">San Miguel</span> <br>
+                <span class="Caracteristica"> Area:</span>
+                <span class="Descripcion">Salon B705</span> <br>
+                <span class="Caracteristica"> Dia Encontrado:</span>
+                <span class="Descripcion">14/04/2025</span> <br>
+                <span class="Caracteristica"> De:</span>
+                <span class="Descripcion">Ariana Casas</span><br>
+            </p>
+        </article>
+        <p><span class="Ubicacion">En Objetos Perdidos</span></p>
+        <button class="estrella" onclick="toggleEstrella(this)">★</button>
+        <nav class="Detalles_Publicacion">
+                <a href="#"><i></i>Ver más</a>
+        </nav>
+    </div>
+</body>
+<script src="JV/publicaciones.js"></script>
+</html>
