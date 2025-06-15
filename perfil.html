@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Perfil - Safe Campus</title>
+  <link rel="stylesheet" href="css/perfil.css">
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Safe Campus</h2>
+    <a href="#">Mis publicaciones</a>
+    <a href="#">Publicaciones</a>
+    <a href="#">Otros</a>
+    <a href="#" class="active">Mi Perfil</a>
+    <a href="#">Notificaciones</a>
+    <a href="#" class="logout">Cerrar Sesión</a>
+  </div>
+
+  <div class="main">
+    <div class="profile-header">Mi Perfil</div>
+    <div class="profile-image"></div>
+    <form class="profile-form">
+      <div class="form-group">
+        <label for="nombres">Nombres</label>
+        <input type="text" value="Oliver">
+      </div>
+      <div class="form-group">
+        <label for="apellidos">Apellidos</label>
+        <input type="text" value="Martinez">
+      </div>
+      <div class="form-group">
+        <label>Celular</label>
+        <input type="text" value="+51 927594756">
+      </div>
+      <div class="form-group">
+        <label>Correo electrónico</label>
+        <input type="email" value="u202415895@ucp.edu.pe">
+      </div>
+      <div class="form-group">
+        <label>Universidad</label>
+        <input type="text" value="Universidad Peruana de Ciencias Aplicadas">
+      </div>
+      <div class="form-group">
+        <label>Sede</label>
+        <input type="text" value="San Miguel">
+      </div>
+      
+      <div class="toggle-group">
+        <label>Modo Oscuro</label>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider"></span>
+        </label>
+      </div>
+      <div class="toggle-group">
+        <label>Notificaciones</label>
+        <label class="switch">
+          <input type="checkbox" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+      
+      <div class="form-group">
+        <label>Idioma</label>
+        <select>
+          <option>Español</option>
+          <option>Inglés</option>
+        </select>
+      </div>
+      <button type="button">Editar</button>
+    </form>
+  </div>
+  <script src="js/perfil.js"></script>
+</body>
+</html>

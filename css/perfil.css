@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f5f5;
+}
+
+.sidebar {
+  position: fixed;
+  width: 200px;
+  height: 100vh;
+  background: #0033A0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  margin: 10px 0;
+}
+
+.sidebar a.active {
+  background: #0055cc;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.main {
+  margin-left: 220px;
+  padding: 40px;
+}
+
+.profile-header {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.profile-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 600px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-group input, .form-group select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.toggle-group {
+  margin-top: 20px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input { display: none; }
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #0033A0;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #0033A0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.logout {
+  margin-top: auto;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #0033A0;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  background: url('https://cdn-icons-png.flaticon.com/512/847/847969.png') center/cover no-repeat;
+}
+
+.modo-oscuro {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.modo-oscuro .sidebar {
+  background-color: #1f1f1f;
+}
+
+.modo-oscuro .form-group input, 
+.modo-oscuro .form-group select {
+  background-color: #333;
+  color: #e0e0e0;
+  border-color: #555;
+}
+
+.modo-oscuro button {
+  background-color: #555;
+}
+
+.modo-oscuro .profile-image {
+  border-color: #e0e0e0;
+}
