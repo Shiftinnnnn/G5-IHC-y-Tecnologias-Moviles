@@ -18,11 +18,17 @@
             </div>
             <nav class="navbar">
                 <ul>
-                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
-                    <li><a href="#como-funciona" class="nav-link">¿Cómo funciona?</a></li>
-                    <li><a href="#caracteristicas" class="nav-link">Características</a></li>
-                    <li><a href="#quienes-somos" class="nav-link">¿Quiénes Somos?</a></li>
-                    <li></li><button class="btn-acceder">Acceder</button></li>
+                    <li><a href="#inicio" class="nav-link" id="inicio">Inicio</a></li>
+                    <li><a href="#como-funciona" class="nav-link" id="como-funciona">¿Cómo funciona?</a></li>
+                    <li><a href="#caracteristicas" class="nav-link" id="caracteristicas">Características</a></li>
+                    <li><a href="#quienes-somos" class="nav-link" id="quienes-somos">¿Quiénes Somos?</a></li>
+                    <li></li><button class="btn-acceder" id="acceder">Acceder</button></li>
+                    <li>
+                        <select id="idioma-selector">
+                            <option value="es">Español</option>
+                            <option value="en">English</option>
+                        </select>
+                    </li>
                 </ul>
                 
             </nav>
@@ -33,10 +39,10 @@
     <section id="inicio" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Perdiste algo, pero no estás solo.</h1>
-                <p>Con SafeCampus, reporta y encuentra tus objetos extraviados en segundos.</p>
-                <p>Rápido. Seguro. Eficiente.</p>
-                <button class="btn-empezar">Empieza ahora</button>
+                <h1 id="titulo-principal">Perdiste algo, pero no estás solo.</h1>
+                <p id="subtitulo">Con SafeCampus, reporta y encuentra tus objetos extraviados en segundos.</p>
+                <p id="subtitulo2">Rápido. Seguro. Eficiente.</p>
+                <button class="btn-empezar" id="btn-empezar">Empieza ahora</button>
             </div>
             <div class="hero-image">
                 <!-- Imagen placeholder - reemplazar con imagen real -->
@@ -48,23 +54,23 @@
     <!-- Sección ¿Cómo funciona? -->
     <section id="como-funciona" class="funcionamiento">
         <div class="container">
-            <h2>¿Cómo funciona?</h2>
+            <h2 id="como-funciona2">¿Cómo funciona?</h2>
             <div class="pasos">
                 <div class="paso">
                     <div class="numero-circulo">1</div>
-                    <h3>Reporta o busca un objeto</h3>
-                    <p>Accede a la app y completa un breve formulario con una foto, ubicación y descripción del objeto.</p>
+                    <h3 id="funcionamiento-titulo1">Reporta o busca un objeto</h3>
+                    <p id="funcionamiento-subtitulo1">Accede a la app y completa un breve formulario con una foto, ubicación y descripción del objeto.</p>
                 </div>
                 <div class="paso">
                     <div class="numero-circulo">2</div>
-                    <h3>Encuentra</h3>
-                    <p>Revisa los objetos reportados por otros usuarios.<br>
+                    <h3 id="funcionamiento-titulo2">Encuentra</h3>
+                    <p id="funcionamiento-subtitulo2">Revisa los objetos reportados por otros usuarios.<br>
                     Si reconoces lo que perdiste, avísalo directamente desde la app y da los detalles para validarlo.</p>
                 </div>
                 <div class="paso">
                     <div class="numero-circulo">3</div>
-                    <h3>Recupera de forma segura</h3>
-                    <p>Una vez validado tu reporte, recibirás instrucciones para recoger tu objeto en el área de objetos perdidos del establecimiento educativo.</p>
+                    <h3 id="funcionamiento-titulo3">Recupera de forma segura</h3>
+                    <p id="funcionamiento-subtitulo3">Una vez validado tu reporte, recibirás instrucciones para recoger tu objeto en el área de objetos perdidos del establecimiento educativo.</p>
                 </div>
             </div>
         </div>
@@ -73,19 +79,19 @@
     <!-- Sección Características -->
     <section id="caracteristicas" class="caracteristicas">
         <div class="container">
-            <h2>Características</h2>
+            <h2 id="caracteristicas2">Características</h2>
             <div class="caracteristicas-grid">
                 <div class="caracteristica-card">
-                    <h3>Seguridad</h3>
-                    <p>SafeCampus solo permitirá a los usuarios registrarse con su correo institucional asegurado así su pertenencia a un centro universitario</p>
+                    <h3 id="carac-titulo1">Seguridad</h3>
+                    <p id="carac-subtitulo1">SafeCampus solo permitirá a los usuarios registrarse con su correo institucional asegurado así su pertenencia a un centro universitario</p>
                 </div>
                 <div class="caracteristica-card">
-                    <h3>Contacto</h3>
-                    <p>El sistema de SafeCampus al detectar un objeto que cumpla con las características de un objeto reportado como perdido, notificará al usuario de la coincidencia</p>
+                    <h3 id="carac-titulo2">Contacto</h3>
+                    <p id="carac-subtitulo2">El sistema de SafeCampus al detectar un objeto que cumpla con las características de un objeto reportado como perdido, notificará al usuario de la coincidencia</p>
                 </div>
                 <div class="caracteristica-card">
-                    <h3>Busqueda</h3>
-                    <p>El sistema de SafeCampus usará una busqueda mediante filtros y etiquetas para mostrar mejores resultados y detectar de forma más específica los objetos perdidos</p>
+                    <h3 id="carac-titulo3">Busqueda</h3>
+                    <p id="carac-subtitulo3">El sistema de SafeCampus usará una busqueda mediante filtros y etiquetas para mostrar mejores resultados y detectar de forma más específica los objetos perdidos</p>
                 </div>
             </div>
         </div>
@@ -94,14 +100,14 @@
     <!-- Sección ¿Quiénes Somos? -->
     <section id="quienes-somos" class="quienes-somos">
         <div class="container">
-            <h2>¿Quiénes Somos?</h2>
+            <h2 id="quienes-somos2">¿Quiénes Somos?</h2>
             <div class="descripcion">
-                <p>Somos Lostify, una startup comprometida con mejorar la vida universitaria mediante tecnología. Nacimos con la misión de resolver un problema cotidiano: la pérdida de objetos dentro del campus.</p>
-                <p>Nuestro equipo está formado por jóvenes apasionados por la innovación, la seguridad y el bienestar estudiantil. Creemos en el poder de la comunidad y en la tecnología como puente para conectar personas, resolver problemas y fortalecer la solidaridad en los entornos educativos.</p>
-                <p>"Recupera lo que perdiste".</p>
+                <p id="descripcion1">Somos Lostify, una startup comprometida con mejorar la vida universitaria mediante tecnología. Nacimos con la misión de resolver un problema cotidiano: la pérdida de objetos dentro del campus.</p>
+                <p id="descripcion2">Nuestro equipo está formado por jóvenes apasionados por la innovación, la seguridad y el bienestar estudiantil. Creemos en el poder de la comunidad y en la tecnología como puente para conectar personas, resolver problemas y fortalecer la solidaridad en los entornos educativos.</p>
+                <p id="descripcion3">"Recupera lo que perdiste".</p>
             </div>
             
-            <h3 class="integrantes-titulo">Integrantes</h3>
+            <h3 class="integrantes-titulo" id="integrantes-titulo">Integrantes</h3>
             <div class="integrantes-grid">
                 <!-- Fila 1 -->
                 <div class="integrante">
@@ -145,21 +151,21 @@
                 <div class="footer-logo">
                     <!-- Logo placeholder - reemplazar con imagen real -->
                     <img src="img/landingpage/logoSafeCampus.png" alt="logo" height="70px" width="200px"/>
-                    <p>"Recupera lo que perdiste".</p>
+                    <p id="frase">"Recupera lo que perdiste".</p>
                 </div>
                 
                 <div class="footer-section">
-                    <h3>Enlaces de navegacion</h3>
+                    <h3 id="footer-section1">Enlaces de navegación</h3>
                     <ul>
-                        <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#caracteristicas">Características</a></li>
-                        <li><a href="#">Planes</a></li>
-                        <li><a href="#">Preguntas frecuentes</a></li>
+                        <li><a href="#inicio" id="footer-inicio">Inicio</a></li>
+                        <li><a href="#caracteristicas" id="footer-caracteristicas">Características</a></li>
+                        <li><a href="#" id="footer-planes">Planes</a></li>
+                        <li><a href="#" id="footer-PF">Preguntas frecuentes</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-section">
-                    <h3>Contactanos</h3>
+                    <h3 id="footer-section2">Contactanos</h3>
                     <ul>
                         <li>contacto@safecampus.app</li>
                         <li>Lima, Peru</li>
@@ -169,7 +175,7 @@
             </div>
             
             <div class="footer-bottom">
-                <p>©2025 Copyright Lostify. Todos los derechos reservados</p>
+                <p id="copy">©2025 Copyright Lostify. Todos los derechos reservados</p>
             </div>
         </div>
     </footer>
