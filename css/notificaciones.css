@@ -1,0 +1,92 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-wrap: wrap;
+}
+
+.sidebar-editar-perfil {
+  min-width: 220px;
+  width: 20vw;
+  max-width: 300px;
+  background-color: #083baf;
+  color: white;
+  padding: 2vw 0;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.sidebar-logo-container {
+  text-align: center;
+}
+
+.sidebar-logo {
+  display: block;
+  margin: 0 auto 10px;
+  width: 40px;
+}
+
+.sidebar-titulo {
+  margin: 0;
+  text-align: center;
+}
+
+.sidebar-link {
+  display: block;
+  padding: 1.2vw 2vw;
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar-link:hover,
+.sidebar-link.active {
+  background-color: #dbe7ff;
+  color: #083baf;
+  font-weight: bold;
+}
+
+.sidebar-cerrar-sesion {
+  margin-top: auto;
+  padding: 2vw;
+}
+
+.contenido-notificaciones {
+  padding: 4vw;
+  flex-grow: 1;
+  background-color: #f9f9f9;
+  min-width: 0;
+}
+
+.titulo-notificaciones {
+  color: #083baf;
+  margin-bottom: 20px;
+}
+
+.lista-notificaciones {
+  color: #083baf;
+  font-weight: 500;
+}
+.sidebar-logo-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.sidebar-logo {
+  width: 40px;
+  height: 40px;
+  margin: 0;
+}
+
+.sidebar-titulo {
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: left;
+  color: white;
+}

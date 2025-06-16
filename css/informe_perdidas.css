@@ -1,0 +1,181 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-wrap: wrap; /* Permite que los elementos se acomoden si no hay espacio */
+}
+
+.sidebar-editar-perfil {
+  min-width: 220px;
+  width: 20vw;
+  max-width: 300px;
+  background-color: #083baf;
+  color: white;
+  padding: 2vw 0;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.sidebar-logo-container {
+  text-align: center;
+}
+
+.sidebar-logo {
+  display: block;
+  margin: 0 auto 10px;
+  width: 40px;
+}
+
+.sidebar-titulo {
+  margin: 0;
+  text-align: center;
+}
+
+.sidebar-link {
+  display: block;
+  padding: 1.2vw 2vw;
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar-link:hover,
+.sidebar-link.active {
+  background-color: #dbe7ff;
+  color: #083baf;
+  font-weight: bold;
+}
+
+.sidebar-cerrar-sesion {
+  margin-top: auto;
+  padding: 2vw;
+}
+
+.contenido-editar-perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra el formulario, pero no afecta la flecha */
+  padding: 40px;
+  flex-grow: 1;
+  background-color: #f9f9f9;
+}
+
+.btn-volver-editar-perfil {
+  font-size: 1.2em;
+  margin-bottom: 2vw;
+  cursor: pointer;
+  color: #1ea2ee;
+  font-weight: bold;
+  align-self: flex-start;
+}
+
+.formulario-editar-perfil {
+  background: #ffffff;
+  padding: 1vw 2vw;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+  width: 100%;
+  max-width: 600px;
+  min-width: 100px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.formulario-editar-perfil label {
+  margin: 1vw 0 0.3vw;
+}
+
+.formulario-editar-perfil input[type="text"],
+.formulario-editar-perfil input[type="email"],
+.formulario-editar-perfil select {
+  margin-bottom: 0.5vw;
+  padding: 0.8vw;
+  border: 2px solid #083baf;
+  border-radius: 8px;
+  font-size: 1.1em;
+  box-sizing: border-box;
+}
+
+.btn-guardar-editar-perfil {
+  margin-top: 2vw;
+  background-color: #083baf;
+  color: white;
+  padding: 1.2vw 3vw;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1em;
+  cursor: pointer;
+  align-self: flex-end;
+  min-width: 100px;
+}
+
+.btn-guardar-editar-perfil:hover {
+  background-color: #062a7e;
+}
+
+.caja-flecha-atras {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 2px solid #083baf;
+  border-radius: 10px;
+  background: #fff;
+  color: #083baf;
+  font-size: 1.6em;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 2vw;
+  margin-top: 1vw;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 2px 8px rgba(8,59,175,0.08);
+  text-decoration: none;
+}
+
+.caja-flecha-atras:hover {
+  background: #083baf;
+  color: #fff;
+}
+
+.caja-flecha-con-texto {
+  display: flex;
+  align-items: center; /* Alinea verticalmente la flecha y el texto */
+  gap: 12px;
+  margin-bottom: 2vw;
+  align-self: flex-start;
+}
+
+.texto-editar-perfil {
+  font-size: 2em;
+  color: #083baf;
+  font-weight: bold;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  margin-top: -8px; 
+}
+.sidebar-logo-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.sidebar-logo {
+  width: 40px;
+  height: 40px;
+  margin: 0;
+}
+
+.sidebar-titulo {
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: left;
+  color: white;
+}
+
