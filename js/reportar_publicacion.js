@@ -10,3 +10,13 @@ function switchSection(section) {
     // Agregar más redirecciones según sea necesario
     console.log(`Navegando a: ${section}`);
 }
+
+function logout() {
+    if (confirm('¿Estás seguro de que quieres cerrar sesión?')) {
+        console.log('Cerrando sesión...');
+        localStorage.removeItem('publicacionDetalle');
+        alert('Sesión cerrada');
+        // Redirigir al login
+        window.location.href = 'login.html';
+    }
+}

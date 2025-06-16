@@ -121,6 +121,6 @@ function logout() {
         localStorage.removeItem('publicacionDetalle');
         alert('Sesión cerrada');
         // Redirigir al login
-        // window.location.href = 'login.html';
+        window.location.href = 'login.html';
     }
 }

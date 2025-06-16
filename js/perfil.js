@@ -65,3 +65,14 @@ function switchSection(section) {
     }
     console.log(`Navegando a: ${section}`);
 }
+
+function logout() {
+    if (confirm('¿Estás seguro de que quieres cerrar sesión?')) {
+        console.log('Cerrando sesión...');
+        localStorage.removeItem('publicacionDetalle');
+        localStorage.removeItem('favoritos');
+        alert('Sesión cerrada');
+        // Redirigir al login
+        window.location.href = 'login.html';
+    }
+}

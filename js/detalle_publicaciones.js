@@ -227,6 +227,6 @@ function logout() {
         localStorage.removeItem('favoritos');
         alert('Sesión cerrada');
         // Redirigir al login
-        // window.location.href = 'login.html';
+        window.location.href = 'login.html';
     }
 }
