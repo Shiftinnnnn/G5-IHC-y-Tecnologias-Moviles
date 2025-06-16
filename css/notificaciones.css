@@ -27,13 +27,8 @@ body {
 .sidebar-logo {
   display: block;
   margin: 0 auto 10px;
-  width: 40px;
 }
 
-.sidebar-titulo {
-  margin: 0;
-  text-align: center;
-}
 
 .sidebar-link {
   display: block;
