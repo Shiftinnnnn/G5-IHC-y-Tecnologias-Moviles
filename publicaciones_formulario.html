@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario SafeCampus</title>
+  <link rel="stylesheet" href="publicaciones_formulario.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="logo.png" alt="Logo">
+      </div>
+      <nav>
+        <a href="#">Mis publicaciones</a>
+        <a class="active" href="#">Publicaciones</a>
+        <a href="#">Otros</a>
+        <a href="#">Mi Perfil</a>
+        <a href="#">Notificaciones</a>
+      </nav>
+      <button class="logout">Cerrar Sesión</button>
+    </aside>
+    <main class="formulario">
+      <div class="header">
+        <button class="back-button">←</button>
+        <h1>Publicaciones</h1>
+      </div>
+      <div class="form-container">
+        <h2>Formulario</h2>
+        <form>
+          <label for="nombres">Nombres</label>
+          <input type="text" id="nombres" name="nombres">
+
+          <label for="apellidos">Apellidos</label>
+          <input type="text" id="apellidos" name="apellidos">
+
+          <label for="contacto">Numero de contacto</label>
+          <input type="text" id="contacto" name="contacto">
+
+          <label for="correo">Correo de contacto</label>
+          <input type="email" id="correo" name="correo">
+
+          <label for="descripcion">Descripción de perdida</label>
+          <textarea id="descripcion" name="descripcion"></textarea>
+
+          <label for="pruebas">Subir Pruebas</label>
+          <input type="file" id="pruebas" name="pruebas">
+
+          <button type="submit" class="submit">Enviar</button>
+        </form>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
