@@ -420,3 +420,35 @@ body {
         font-size: 12px;
     }
 }
+
+.report-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.status-actions .status-btn {
+  background-color: #fff;
+  border: 2px solid #0033a0;
+  border-radius: 8px;
+  padding: 8px 16px;
+  color: #0033a0;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.report-action .btn-reportar {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.report-action .btn-reportar:hover {
+  background-color: #cc0000;
+}
