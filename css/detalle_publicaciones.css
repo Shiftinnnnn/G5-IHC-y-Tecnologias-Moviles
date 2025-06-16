@@ -276,28 +276,41 @@ body {
     min-width: 120px;
 }
 
-.btn-delete {
-    background: #ef4444;
-    color: white;
-}
-
-.btn-delete:hover {
-    background: #dc2626;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
-}
-
-.btn-edit {
+.btn-contact {
     background: #083AA9;
     color: white;
+    border: 2px solid #083AA9;
 }
 
-.btn-edit:hover {
+.btn-contact:hover {
     background: #0629859e;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(8, 58, 169, 0.3);
 }
 
+.btn-favorite {
+    background: white;
+    color: #083AA9;
+    border: 2px solid #083AA9;
+}
+
+.btn-favorite:hover {
+    background: #083AA9;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(8, 58, 169, 0.3);
+}
+
+.btn-favorite.active {
+    background: #f59e0b;
+    color: white;
+    border-color: #f59e0b;
+}
+
+.btn-favorite.active:hover {
+    background: #d97706;
+    border-color: #d97706;
+}
 
 .fade-in {
     animation: fadeIn 0.5s ease-in;
@@ -408,18 +421,34 @@ body {
     }
 }
 
+.report-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
 
+.status-actions .status-btn {
+  background-color: #fff;
+  border: 2px solid #0033a0;
+  border-radius: 8px;
+  padding: 8px 16px;
+  color: #0033a0;
+  font-weight: bold;
+  cursor: pointer;
+}
 
+.report-action .btn-reportar {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+.report-action .btn-reportar:hover {
+  background-color: #cc0000;
+}
