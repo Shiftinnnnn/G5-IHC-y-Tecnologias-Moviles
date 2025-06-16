@@ -1,1 +1,0 @@
-# G5-IHC-y-Tecnologias-Moviles
