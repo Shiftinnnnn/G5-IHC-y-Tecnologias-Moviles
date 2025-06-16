@@ -89,6 +89,8 @@ function switchSection(section) {
         window.location.href = 'publicaciones.html';
     } else if (section === 'perfil') {
         window.location.href = 'perfil.html';
+    }else if (section === 'notificaciones') {
+        window.location.href = 'notificaciones.html';
     }
     // Agregar más redirecciones según sea necesario
     console.log(`Navegando a: ${section}`);
@@ -111,7 +113,7 @@ function editPost() {
     console.log('Editando publicación...');
     alert('Redirigiendo a la página de edición de tu publicación...');
     // Aquí puedes redirigir a una página de edición
-    // window.location.href = 'editar_publicacion.html';
+    window.location.href = 'mispublicaciones_cartuchera.html';
 }
 
 // Función para cerrar sesión

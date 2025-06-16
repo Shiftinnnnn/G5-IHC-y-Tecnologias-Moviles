@@ -168,6 +168,8 @@ function switchSection(section) {
         window.location.href = 'publicaciones.html';
     } else if (section === 'perfil') {
         window.location.href = 'perfil.html';
+    }else if (section === 'notificaciones') {
+        window.location.href = 'notificaciones.html';
     }
     // Agregar más redirecciones según sea necesario
     console.log(`Navegando a: ${section}`);

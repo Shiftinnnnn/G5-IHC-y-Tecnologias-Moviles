@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis Publicaciones - SafeCampus</title>
-  <link rel="stylesheet" href="css/mispublicaciones_cartuchera.css">
+  <title>Nueva Publicación SafeCampus</title>
+  <link rel="stylesheet" href="css/nueva_publicacion.css">
 </head>
 <body>
   <div class="container">
     <aside class="sidebar">
       <div class="logo">
-        <img src="img/mispublicaciones_cartuchera/logo.png" alt="Logo">
+        <img src="img/mis_publicaciones/logo.JPG" alt="Logo">
       </div>
       <nav>
         <a class="active" href="mis_publicaciones.html">Mis publicaciones</a>
@@ -24,40 +24,43 @@
 
     <main class="formulario">
       <div class="header">
-        <button class="back-button"><a href="detalle_mis_publicaciones.html">←</a></button>
+        <button class="back-button"><a href="mis_publicaciones.html">←</a></button>
         <h1>Mis Publicaciones</h1>
       </div>
-
       <div class="form-container">
-        <h2>Cartuchera</h2>
-
+        <h2>Nueva publicación</h2>
         <form>
-          <label for="sede">Sede</label>
-          <input type="text" id="sede" name="sede" placeholder="Ej: San Miguel">
 
-          <label for="area">Área</label>
-          <input type="text" id="area" name="area" placeholder="Ej: Salón B405">
+          <label for="nombre">Nombre del objeto</label>
+          <input type="text" id="nombre" name="nombre">
+
+          <label for="sede">Sede</label>
+          <input type="text" id="sede" name="sede">
+
+          <label for="area">Area</label>
+          <input type="text" id="area" name="area">
 
           <label for="fecha">Día encontrado</label>
-          <input type="text" id="fecha" name="fecha" placeholder="Ej: 13/04/2025">
+          <input type="text" id="fecha" name="fecha">
 
           <label for="descripcion_objeto">Descripción objeto</label>
-          <textarea id="descripcion_objeto" name="descripcion_objeto" placeholder="Describe el objeto encontrado..."></textarea>
+          <textarea id="descripcion_objeto" name="descripcion_objeto"></textarea>
 
           <label for="descripcion_hallazgo">Descripción de hallazgo</label>
-          <textarea id="descripcion_hallazgo" name="descripcion_hallazgo" placeholder="Indica dónde se encontró el objeto..."></textarea>
+          <textarea id="descripcion_hallazgo" name="descripcion_hallazgo"></textarea>
 
           <label for="estado">Ver estado del objeto</label>
           <select id="estado" name="estado">
-          <option value="pendiente">Pendiente</option>
-          <option value="reclamado">Reclamado</option>
-          <option value="entregado">Entregado</option>
+            <option value="">-</option>
+            <option value="pendiente">Pendiente</option>
+            <option value="reclamado">Reclamado</option>
+            <option value="entregado">Entregado</option>
           </select>
 
           <label for="imagen">Subir Imagen</label>
           <input type="file" id="imagen" name="imagen">
 
-          <button type="submit" class="submit">Guardar</button>
+          <button type="submit" class="submit"><a href="mis_publicaciones.html">Publicar</a></button>
         </form>
       </div>
     </main>
