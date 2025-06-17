@@ -7,6 +7,9 @@ function switchSection(section) {
     } else if (section === 'perfil') {
         window.location.href = 'perfil.html';
     }
+    else if (section === 'otros') {
+        window.location.href = 'otros.html';
+    }
     // Agregar más redirecciones según sea necesario
     console.log(`Navegando a: ${section}`);
 }
